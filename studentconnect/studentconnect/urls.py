@@ -14,5 +14,6 @@ urlpatterns = [
     path('api/auth/user/',UserDetailView.as_view(),name='user_detail'),
     path('api/google/validate_google_token',validate_google_token,name='validate_token'),
     path('callback/', google_login_callback, name='callback'),
+    path('api/', include('profiles.urls')), 
 
 ]
