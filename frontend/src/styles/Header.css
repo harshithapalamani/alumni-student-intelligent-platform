@@ -84,3 +84,8 @@
         opacity: 1;
     }
 }
+
+.header button:hover {
+    background-color: #091251;
+    cursor: pointer;
+}
