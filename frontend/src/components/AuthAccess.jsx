@@ -14,7 +14,7 @@ function ProtectedRoute({ children }) {
         isAuthorized &&
         (window.location.pathname === "/login" || window.location.pathname === "/register")
     ) {
-        return <Navigate to="/" />;
+        return <Navigate to="/dashboard" />;
     }
 
     return children;

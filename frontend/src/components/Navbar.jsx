@@ -11,6 +11,7 @@ function Navbar() {
 
     const handleLogout = () => {
         logout();
+        Navigate('/')
     }
 
     return (
@@ -20,13 +21,16 @@ function Navbar() {
             </Link>
             <ul className="navbar-menu-left">
                 <li>
-                    <Link to="/why">Why Us?</Link>
+                    {/* <Link to="/why">Why Us?</Link> */}
+                    Why Us?
                 </li>
                 <li>
-                    <Link to="/about">About</Link>
+                    {/* <Link to="/about">About</Link> */}
+                    About
                 </li>
                 <li>
-                    <Link to="/contact">Contact</Link>
+                    {/* <Link to="/contact">Contact</Link> */}
+                    Contact
                 </li>
             </ul>
             <ul className="navbar-menu-right">
